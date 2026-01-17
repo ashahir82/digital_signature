@@ -47,13 +47,13 @@
             <tbody>
                 <tr>
                     <td class="align-middle">
-                        <img src="images/jtm.png" alt="logo JTM" style="height: 80px;">
+                        <img src="images/jtm.png" class="mx-3"alt="logo JTM" style="height: 80px;">
                     </td>
                     <td class="align-middle">
-                        <img src="images/jata.png" alt="logo Jata Negara" style="height: 120px;">
+                        <img src="images/jata.png" class="mx-3" alt="logo Jata Negara" style="height: 120px;">
                     </td>
                     <td class="align-middle">
-                        <img src="images/JiMS.png" alt="logo JiMS" style="height: 80px;">
+                        <img src="images/JiMS.png" class="mx-5" alt="logo JiMS" style="height: 80px;">
                     </td>
                 </tr>
             </tbody>
