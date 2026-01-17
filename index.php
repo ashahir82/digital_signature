@@ -59,9 +59,9 @@
             </tbody>
         </table>
         <div class="text-center">
-            <h1 class="text-center parisienne-regular">Majlis Perasmian</h1>
-            <h3 class="text-center mb-0">SISTEM JTM INTEGRATED MANAGEMENT SYSTEM (JiMS)</h3>
-            <h5 class="text-center">Gerbang Digital TVET JTM</h5>
+            <h1 class="parisienne-regular">Majlis Perasmian</h1>
+            <h3 class="mb-0">SISTEM JTM INTEGRATED MANAGEMENT SYSTEM (JiMS)</h3>
+            <h5 class="font-monospace">Gerbang Digital TVET JTM</h5>
             <p>Disempurnakan Oleh:</p>
 
             <canvas id="signature-pad"></canvas>
