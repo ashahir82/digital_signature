@@ -118,7 +118,7 @@
             .then(res => res.json())
             .then(data => {
                 if (data.status === 'ok') {
-                    alert('Tandatangan berjaya disimpan');
+                    // alert('Tandatangan berjaya disimpan');
                     signaturePad.clear();
                     window.location.href = 'preview.php?id=' + data.id;
                 } else {
