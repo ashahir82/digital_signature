@@ -100,7 +100,7 @@ if (isset($_GET['id']) === true) {
             </div>
 
             <div id="videoModal">
-                <video id="launchVideo" autoplay playsinline>
+                <video id="launchVideo" playsinline>
                     <source src="videos/video_1.mp4" type="video/mp4">
                 </video>
             </div>
