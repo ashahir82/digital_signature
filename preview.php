@@ -50,6 +50,21 @@ if (isset($_GET['id']) === true) {
             font-style: normal;
             font-size: 120px;
         }
+        #videoModal{
+            display:none;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:black;
+            z-index:9999;
+        }
+        #launchVideo{
+            width:100%;
+            height:100%;
+            object-fit:contain;
+        }
     </style>
 </head>
 <body>
@@ -79,13 +94,49 @@ if (isset($_GET['id']) === true) {
                 <img src="<?= 'uploads/signatures/' . $result['signature_file'] ?>" class="img-fluid" alt="signature" id="signature-image">
             </div>
 
-            <p class="fs-5 fw-bold mb-0">YBhg. Datuk Rospiagos Bin Taha</p>
-            <p class="fw-bold">KETUA PENGARAH
+            <div class="btn-group">
+                <button class="btn btn-warning btn-back" onclick="returnIndex()">Kembali</button>
+                <button class="btn btn-success btn-save" onclick="playLaunchVideo()">Sila sahkan</button>
+            </div>
+
+            <div id="videoModal">
+                <video id="launchVideo" autoplay playsinline>
+                    <source src="videos/video_1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <p class="fs-2 fw-bold mb-0">YBhg. Datuk Rospiagos Bin Taha</p>
+            <p class="fs-4 fw-bold">KETUA PENGARAH
             <br>JABATAN TENAGA MANUSIA</p>
             <p>pada</p>
-            <p class="fw-bold">20 Januari 2026 bersamaan 1 Syaaban, 1447h</p>
+            <p class="fs-4 fw-bold">20 Januari 2026 bersamaan 1 Syaaban, 1447h</p>
             <p>&nbsp</p>
         </div>
     </div>
+
+    <script>
+        function playLaunchVideo(){
+            const modal=document.getElementById('videoModal');
+            const video=document.getElementById('launchVideo');
+            modal.style.display='block';
+            video.currentTime=0;
+
+            if(video.requestFullscreen) video.requestFullscreen();
+            else if(video.webkitRequestFullscreen) video.webkitRequestFullscreen();
+            else if(video.msRequestFullscreen) video.msRequestFullscreen();
+
+            video.play();
+
+            video.onended=function(){
+                if(document.exitFullscreen) document.exitFullscreen();
+                modal.style.display='none';
+                window.location.reload(); // return page
+            }
+        }
+
+        function returnIndex(){
+            window.location.href = 'index.php';
+        }
+    </script>
 </body>
 </html>

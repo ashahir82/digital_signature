@@ -27,7 +27,7 @@
             background-color: #fff;
             border: 1px solid #ccc;
             width: 100%;
-            height: 200px;
+            height: 150px;
         }
         .center {
             margin-left: auto;
@@ -71,11 +71,11 @@
                 <button class="btn btn-success btn-save" onclick="saveSignature()">Simpan Tandatangan</button>
             </div>
 
-            <p class="fs-5 fw-bold mb-0">YBhg. Datuk Rospiagos Bin Taha</p>
-            <p class="fw-bold">KETUA PENGARAH
+            <p class="fs-2 fw-bold mb-0">YBhg. Datuk Rospiagos Bin Taha</p>
+            <p class="fs-4 fw-bold">KETUA PENGARAH
             <br>JABATAN TENAGA MANUSIA</p>
             <p>pada</p>
-            <p class="fw-bold">20 Januari 2026 bersamaan 1 Syaaban, 1447h</p>
+            <p class="fs-4 fw-bold">20 Januari 2026 bersamaan 1 Syaaban, 1447h</p>
             <p>&nbsp</p>
         </div>
     </div>
