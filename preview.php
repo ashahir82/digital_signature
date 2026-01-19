@@ -130,7 +130,9 @@ if (isset($_GET['id']) === true) {
             video.onended=function(){
                 if(document.exitFullscreen) document.exitFullscreen();
                 modal.style.display='none';
-                window.location.reload(); // return page
+                video.pause();
+                video.currentTime = 0;
+                // window.location.reload();
             }
         }
 
